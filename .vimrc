@@ -52,3 +52,4 @@ set timeoutlen=1000 ttimeoutlen=0
 map <C-h> <Esc>:tabp<CR>
 map <C-l> <Esc>:tabn<CR>
 
+:autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
