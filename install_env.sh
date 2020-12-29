@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update
-apt install -y vim htop git tmux cmake build-essential wget python3 python3-dev
+apt install -y vim htop git tmux cmake build-essential wget python3 python3-dev libgl1-mesa-glx libglib2.0-0
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
