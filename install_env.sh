@@ -27,6 +27,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<' >> ~/.bashrc
+rm Anaconda3-2020.02-Linux-x86_64.sh
 
 ########################################## intall vim plugins ################################################
 # install pathogen
