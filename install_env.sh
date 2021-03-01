@@ -11,6 +11,8 @@ if ! [ -f "$FILE" ]; then
     wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 fi
 bash Anaconda3-2020.02-Linux-x86_64.sh -b
+echo -e "\n# Anaconda path" >> ~/.bashrc
+echo "export PATH=/root/anaconda3/bin:\$PATH" >> ~/.bashrc
 source ~/.bashrc
 
 ########################################## intall vim plugins ################################################
