@@ -5,7 +5,7 @@ apt update
 apt install -y vim htop git tmux cmake build-essential wget libgl1-mesa-glx libglib2.0-0 curl
 
 # install anaconda
-cd workspace
+cd ~/workspace
 FILE=Anaconda3-2020.02-Linux-x86_64.sh
 if ! [ -f "$FILE" ]; then
     wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
