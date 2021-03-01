@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# install common packages
+############################################ common packages #################################################
 apt update
 apt install -y vim htop git tmux cmake build-essential wget libgl1-mesa-glx libglib2.0-0 curl
 
@@ -13,7 +13,7 @@ fi
 bash Anaconda3-2020.02-Linux-x86_64.sh -b
 source ~/.bashrc
 
-# intall vim plugins
+########################################## intall vim plugins ################################################
 # install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -38,7 +38,7 @@ git clone https://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgut
 # python code format
 git clone https://github.com/nvie/vim-flake8.git ~/.vim/bundle/vim-flake8
 
-# vim and tmux configs
+######################################### vim and tmux configs #################################################
 cd ~
 wget https://raw.githubusercontent.com/thangvubk/config/master/.vimrc
 wget https://raw.githubusercontent.com/thangvubk/config/master/.tmux.conf
