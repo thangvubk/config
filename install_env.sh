@@ -5,29 +5,28 @@ apt update
 apt install -y vim htop git tmux cmake build-essential wget libgl1-mesa-glx libglib2.0-0 curl
 
 # install anaconda
-cd ~/workspace
 FILE=Anaconda3-2020.02-Linux-x86_64.sh
 if ! [ -f "$FILE" ]; then
     wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 fi
 bash Anaconda3-2020.02-Linux-x86_64.sh -b
-eval "$('/root/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+eval "$(~/anaconda3/bin/conda 'shell.bash' 'hook' 2> /dev/null)"
 echo -e $'
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/root/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$(~/anaconda3/bin/conda 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/root/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/root/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "~/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "~/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/root/anaconda3/bin:$PATH"
+        export PATH="~/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<' >> ~/.bashrc
-rm Anaconda3-2020.02-Linux-x86_64.sh
+
 
 ########################################## intall vim plugins ################################################
 # install pathogen
