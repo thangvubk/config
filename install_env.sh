@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ############################################ common packages #################################################
-apt update
-apt install -y vim htop git tmux cmake build-essential wget libgl1-mesa-glx libglib2.0-0 curl
+sudo apt update
+sudo apt install -y vim htop git tmux cmake build-essential wget libgl1-mesa-glx libglib2.0-0 curl
 
 # install anaconda
 FILE=Anaconda3-2020.02-Linux-x86_64.sh
